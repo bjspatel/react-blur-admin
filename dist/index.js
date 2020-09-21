@@ -21,6 +21,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _react2.default.PropTypes = _propTypes2.default;
 _react2.default.createReactClass = _createReactClass2.default;
 
+var _alert = require('./alert');
+
 Object.keys(_alert).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   Object.defineProperty(exports, key, {
