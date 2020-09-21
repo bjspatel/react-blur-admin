@@ -129,8 +129,8 @@ EditableSelect.propTypes = {
   value: _propTypes2.default.node,
   placeholder: _propTypes2.default.string,
   maxHeight: _propTypes2.default.string,
-  options: _propTypes2.default.arrayOf(_react2.default.PropTypes.shape({
-    value: _propTypes2.default.oneOfType([_react2.default.PropTypes.number, _react2.default.PropTypes.string]),
+  options: _propTypes2.default.arrayOf(_propTypes2.default.shape({
+    value: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]),
     label: _propTypes2.default.node
   })),
   onSearch: _propTypes2.default.func, // if label is a ReactElement, we recommend you pass in an onSearch function

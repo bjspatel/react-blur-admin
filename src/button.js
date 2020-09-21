@@ -11,8 +11,8 @@ export class Button extends React.Component {
     disabled: PropTypes.bool,
     isIconHidden: PropTypes.bool,
     icon: PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.element,
+      PropTypes.string,
+      PropTypes.element,
     ]),
   }
 

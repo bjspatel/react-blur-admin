@@ -9,10 +9,10 @@ export class Select extends React.Component {
     onChange: PropTypes.func,
     onRenderValue: PropTypes.func,
     options: PropTypes.arrayOf(
-      React.PropTypes.shape({
+      PropTypes.shape({
         value: PropTypes.oneOfType([
-          React.PropTypes.string,
-          React.PropTypes.number,
+          PropTypes.string,
+          PropTypes.number,
         ]),
         label: PropTypes.node,
       }),

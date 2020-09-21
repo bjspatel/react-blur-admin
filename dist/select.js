@@ -317,8 +317,8 @@ Select.propTypes = {
   maxHeight: _propTypes2.default.string,
   onChange: _propTypes2.default.func,
   onRenderValue: _propTypes2.default.func,
-  options: _propTypes2.default.arrayOf(_react2.default.PropTypes.shape({
-    value: _propTypes2.default.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.number]),
+  options: _propTypes2.default.arrayOf(_propTypes2.default.shape({
+    value: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
     label: _propTypes2.default.node
   })),
   value: _propTypes2.default.node,

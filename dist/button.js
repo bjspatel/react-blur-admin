@@ -115,7 +115,7 @@ Button.propTypes = {
   size: _propTypes2.default.oneOf(['xs', 'sm', 'mm', 'md', 'xm', 'lg']),
   disabled: _propTypes2.default.bool,
   isIconHidden: _propTypes2.default.bool,
-  icon: _propTypes2.default.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.element])
+  icon: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element])
 };
 Button.defaultProps = {
   onClick: function noop() {},

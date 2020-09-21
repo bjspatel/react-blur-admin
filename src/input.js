@@ -19,9 +19,9 @@ export class Input extends React.Component {
     onKeyDown: PropTypes.func,
     defaultChecked: PropTypes.bool,
     value: PropTypes.oneOfType([
-      React.PropTypes.number,
-      React.PropTypes.string,
-      React.PropTypes.bool,
+      PropTypes.number,
+      PropTypes.string,
+      PropTypes.bool,
     ]).isRequired,
     onChange: PropTypes.func.isRequired,
     disabled: PropTypes.bool,

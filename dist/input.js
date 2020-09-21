@@ -291,7 +291,7 @@ Input.propTypes = {
   onValidate: _propTypes2.default.func,
   onKeyDown: _propTypes2.default.func,
   defaultChecked: _propTypes2.default.bool,
-  value: _propTypes2.default.oneOfType([_react2.default.PropTypes.number, _react2.default.PropTypes.string, _react2.default.PropTypes.bool]).isRequired,
+  value: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string, _propTypes2.default.bool]).isRequired,
   onChange: _propTypes2.default.func.isRequired,
   disabled: _propTypes2.default.bool,
   isRounded: _propTypes2.default.bool

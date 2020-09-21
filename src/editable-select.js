@@ -11,10 +11,10 @@ export class EditableSelect extends React.Component {
     placeholder: PropTypes.string,
     maxHeight: PropTypes.string,
     options: PropTypes.arrayOf(
-      React.PropTypes.shape({
+      PropTypes.shape({
         value: PropTypes.oneOfType([
-          React.PropTypes.number,
-          React.PropTypes.string,
+          PropTypes.number,
+          PropTypes.string,
         ]),
         label: PropTypes.node,
       }),
