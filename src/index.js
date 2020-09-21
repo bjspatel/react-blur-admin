@@ -1,3 +1,8 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+React.PropTypes = PropTypes;
+
 export * from './alert';
 export * from './breadcrumbs';
 export * from './button';
