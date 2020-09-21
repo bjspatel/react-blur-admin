@@ -11,6 +11,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -91,10 +95,10 @@ var Panel = exports.Panel = function (_React$Component) {
 }(_react2.default.Component);
 
 Panel.propTypes = {
-  title: _react2.default.PropTypes.string,
-  className: _react2.default.PropTypes.string,
-  size: _react2.default.PropTypes.string,
-  withScroll: _react2.default.PropTypes.bool
+  title: _propTypes2.default.string,
+  className: _propTypes2.default.string,
+  size: _propTypes2.default.string,
+  withScroll: _propTypes2.default.bool
 };
 Panel.defaultProps = {
   className: '',

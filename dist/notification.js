@@ -11,6 +11,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -124,13 +128,13 @@ var Notification = exports.Notification = function (_React$Component) {
 }(_react2.default.Component);
 
 Notification.propTypes = {
-  title: _react2.default.PropTypes.string,
-  type: _react2.default.PropTypes.oneOf(['success', 'warning', 'error', 'info']),
-  timeout: _react2.default.PropTypes.number,
-  extendedTimeout: _react2.default.PropTypes.number,
-  closeButton: _react2.default.PropTypes.bool,
-  tapToDismiss: _react2.default.PropTypes.bool,
-  onClose: _react2.default.PropTypes.func.isRequired
+  title: _propTypes2.default.string,
+  type: _propTypes2.default.oneOf(['success', 'warning', 'error', 'info']),
+  timeout: _propTypes2.default.number,
+  extendedTimeout: _propTypes2.default.number,
+  closeButton: _propTypes2.default.bool,
+  tapToDismiss: _propTypes2.default.bool,
+  onClose: _propTypes2.default.func.isRequired
 };
 Notification.defaultProps = {
   title: '',

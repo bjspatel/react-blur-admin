@@ -15,6 +15,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -273,24 +277,24 @@ var Input = exports.Input = function (_React$Component) {
 }(_react2.default.Component);
 
 Input.propTypes = {
-  type: _react2.default.PropTypes.string,
-  id: _react2.default.PropTypes.string,
-  name: _react2.default.PropTypes.string,
-  className: _react2.default.PropTypes.string,
-  placeholder: _react2.default.PropTypes.string,
-  helpLabel: _react2.default.PropTypes.string,
-  label: _react2.default.PropTypes.string,
-  addonLeft: _react2.default.PropTypes.node,
-  addonRight: _react2.default.PropTypes.node,
-  autoFocus: _react2.default.PropTypes.bool,
-  hasFeedbackIcon: _react2.default.PropTypes.bool,
-  onValidate: _react2.default.PropTypes.func,
-  onKeyDown: _react2.default.PropTypes.func,
-  defaultChecked: _react2.default.PropTypes.bool,
-  value: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.number, _react2.default.PropTypes.string, _react2.default.PropTypes.bool]).isRequired,
-  onChange: _react2.default.PropTypes.func.isRequired,
-  disabled: _react2.default.PropTypes.bool,
-  isRounded: _react2.default.PropTypes.bool
+  type: _propTypes2.default.string,
+  id: _propTypes2.default.string,
+  name: _propTypes2.default.string,
+  className: _propTypes2.default.string,
+  placeholder: _propTypes2.default.string,
+  helpLabel: _propTypes2.default.string,
+  label: _propTypes2.default.string,
+  addonLeft: _propTypes2.default.node,
+  addonRight: _propTypes2.default.node,
+  autoFocus: _propTypes2.default.bool,
+  hasFeedbackIcon: _propTypes2.default.bool,
+  onValidate: _propTypes2.default.func,
+  onKeyDown: _propTypes2.default.func,
+  defaultChecked: _propTypes2.default.bool,
+  value: _propTypes2.default.oneOfType([_react2.default.PropTypes.number, _react2.default.PropTypes.string, _react2.default.PropTypes.bool]).isRequired,
+  onChange: _propTypes2.default.func.isRequired,
+  disabled: _propTypes2.default.bool,
+  isRounded: _propTypes2.default.bool
 };
 Input.defaultProps = {
   className: '',

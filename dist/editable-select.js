@@ -17,6 +17,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _select = require('./select');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -121,19 +125,19 @@ var EditableSelect = exports.EditableSelect = function (_React$Component) {
 }(_react2.default.Component);
 
 EditableSelect.propTypes = {
-  onChange: _react2.default.PropTypes.func.isRequired,
-  value: _react2.default.PropTypes.node,
-  placeholder: _react2.default.PropTypes.string,
-  maxHeight: _react2.default.PropTypes.string,
-  options: _react2.default.PropTypes.arrayOf(_react2.default.PropTypes.shape({
-    value: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.number, _react2.default.PropTypes.string]),
-    label: _react2.default.PropTypes.node
+  onChange: _propTypes2.default.func.isRequired,
+  value: _propTypes2.default.node,
+  placeholder: _propTypes2.default.string,
+  maxHeight: _propTypes2.default.string,
+  options: _propTypes2.default.arrayOf(_react2.default.PropTypes.shape({
+    value: _propTypes2.default.oneOfType([_react2.default.PropTypes.number, _react2.default.PropTypes.string]),
+    label: _propTypes2.default.node
   })),
-  onSearch: _react2.default.PropTypes.func, // if label is a ReactElement, we recommend you pass in an onSearch function
-  onRenderValue: _react2.default.PropTypes.func, // if label is a ReactElement, we recommend you pass in an onRenderValue function
-  isSearchable: _react2.default.PropTypes.bool,
-  disabled: _react2.default.PropTypes.bool,
-  isBeingEdited: _react2.default.PropTypes.bool
+  onSearch: _propTypes2.default.func, // if label is a ReactElement, we recommend you pass in an onSearch function
+  onRenderValue: _propTypes2.default.func, // if label is a ReactElement, we recommend you pass in an onRenderValue function
+  isSearchable: _propTypes2.default.bool,
+  disabled: _propTypes2.default.bool,
+  isBeingEdited: _propTypes2.default.bool
 };
 EditableSelect.defaultProps = {
   value: '',

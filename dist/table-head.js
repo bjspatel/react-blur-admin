@@ -11,6 +11,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -55,7 +59,7 @@ var TableHead = exports.TableHead = function (_React$Component) {
 }(_react2.default.Component);
 
 TableHead.propTypes = {
-  blackMutedBackground: _react2.default.PropTypes.bool
+  blackMutedBackground: _propTypes2.default.bool
 };
 TableHead.defaultProps = {
   blackMutedBackground: true

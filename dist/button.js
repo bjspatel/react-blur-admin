@@ -15,6 +15,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -105,13 +109,13 @@ var Button = exports.Button = function (_React$Component) {
 }(_react2.default.Component);
 
 Button.propTypes = {
-  type: _react2.default.PropTypes.string,
-  onClick: _react2.default.PropTypes.func,
-  title: _react2.default.PropTypes.string,
-  size: _react2.default.PropTypes.oneOf(['xs', 'sm', 'mm', 'md', 'xm', 'lg']),
-  disabled: _react2.default.PropTypes.bool,
-  isIconHidden: _react2.default.PropTypes.bool,
-  icon: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.element])
+  type: _propTypes2.default.string,
+  onClick: _propTypes2.default.func,
+  title: _propTypes2.default.string,
+  size: _propTypes2.default.oneOf(['xs', 'sm', 'mm', 'md', 'xm', 'lg']),
+  disabled: _propTypes2.default.bool,
+  isIconHidden: _propTypes2.default.bool,
+  icon: _propTypes2.default.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.element])
 };
 Button.defaultProps = {
   onClick: function noop() {},

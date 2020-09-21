@@ -11,6 +11,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _reactFlexProto = require('react-flex-proto');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -85,6 +89,6 @@ var Page = exports.Page = function (_React$Component) {
 }(_react2.default.Component);
 
 Page.propTypes = {
-  title: _react2.default.PropTypes.string,
-  actionBar: _react2.default.PropTypes.node
+  title: _propTypes2.default.string,
+  actionBar: _propTypes2.default.node
 };

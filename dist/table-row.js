@@ -11,6 +11,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -52,7 +56,7 @@ var TableRow = exports.TableRow = function (_React$Component) {
 }(_react2.default.Component);
 
 TableRow.propTypes = {
-  noTopBorder: _react2.default.PropTypes.bool
+  noTopBorder: _propTypes2.default.bool
 };
 TableRow.defaultProps = {
   noTopBorder: true

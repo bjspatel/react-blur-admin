@@ -11,6 +11,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -59,12 +63,12 @@ var Table = exports.Table = function (_React$Component) {
 }(_react2.default.Component);
 
 Table.propTypes = {
-  hover: _react2.default.PropTypes.bool,
-  border: _react2.default.PropTypes.bool,
-  condense: _react2.default.PropTypes.bool,
-  stripe: _react2.default.PropTypes.bool,
-  responsive: _react2.default.PropTypes.bool,
-  style: _react2.default.PropTypes.object
+  hover: _propTypes2.default.bool,
+  border: _propTypes2.default.bool,
+  condense: _propTypes2.default.bool,
+  stripe: _propTypes2.default.bool,
+  responsive: _propTypes2.default.bool,
+  style: _propTypes2.default.object
 };
 Table.defaultProps = {
   responsive: true,

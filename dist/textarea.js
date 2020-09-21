@@ -11,6 +11,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -69,13 +73,13 @@ var Textarea = exports.Textarea = function (_React$Component) {
 }(_react2.default.Component);
 
 Textarea.propTypes = {
-  name: _react2.default.PropTypes.string,
-  className: _react2.default.PropTypes.string,
-  placeholder: _react2.default.PropTypes.string,
-  label: _react2.default.PropTypes.string,
-  onChange: _react2.default.PropTypes.func.isRequired,
-  disabled: _react2.default.PropTypes.bool,
-  value: _react2.default.PropTypes.node.isRequired
+  name: _propTypes2.default.string,
+  className: _propTypes2.default.string,
+  placeholder: _propTypes2.default.string,
+  label: _propTypes2.default.string,
+  onChange: _propTypes2.default.func.isRequired,
+  disabled: _propTypes2.default.bool,
+  value: _propTypes2.default.node.isRequired
 };
 Textarea.defaultProps = {
   name: '',

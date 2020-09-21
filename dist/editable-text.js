@@ -11,6 +11,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -189,14 +193,14 @@ var EditableText = exports.EditableText = function (_React$Component) {
 }(_react2.default.Component);
 
 EditableText.propTypes = {
-  onChange: _react2.default.PropTypes.func.isRequired,
-  isOpen: _react2.default.PropTypes.bool,
-  onValidate: _react2.default.PropTypes.func,
-  value: _react2.default.PropTypes.node,
-  hasError: _react2.default.PropTypes.bool,
-  errorHelpLabel: _react2.default.PropTypes.string,
-  placeholder: _react2.default.PropTypes.string,
-  disabled: _react2.default.PropTypes.bool
+  onChange: _propTypes2.default.func.isRequired,
+  isOpen: _propTypes2.default.bool,
+  onValidate: _propTypes2.default.func,
+  value: _propTypes2.default.node,
+  hasError: _propTypes2.default.bool,
+  errorHelpLabel: _propTypes2.default.string,
+  placeholder: _propTypes2.default.string,
+  disabled: _propTypes2.default.bool
 };
 EditableText.defaultProps = {
   value: '',

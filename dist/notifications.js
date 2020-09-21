@@ -17,6 +17,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _notification = require('./notification');
 
 var _eventBus = require('./lib/event-bus');
@@ -106,10 +110,10 @@ var Notifications = exports.Notifications = function (_React$Component) {
 }(_react2.default.Component);
 
 Notifications.propTypes = {
-  position: _react2.default.PropTypes.string,
-  newestOnTop: _react2.default.PropTypes.bool,
-  maxOpened: _react2.default.PropTypes.number,
-  preventDuplicates: _react2.default.PropTypes.bool
+  position: _propTypes2.default.string,
+  newestOnTop: _propTypes2.default.bool,
+  maxOpened: _propTypes2.default.number,
+  preventDuplicates: _propTypes2.default.bool
 };
 Notifications.defaultProps = {
   position: 'top-right',

@@ -15,6 +15,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -309,19 +313,19 @@ var Select = exports.Select = function (_React$Component) {
 }(_react2.default.Component);
 
 Select.propTypes = {
-  placeholder: _react2.default.PropTypes.string,
-  maxHeight: _react2.default.PropTypes.string,
-  onChange: _react2.default.PropTypes.func,
-  onRenderValue: _react2.default.PropTypes.func,
-  options: _react2.default.PropTypes.arrayOf(_react2.default.PropTypes.shape({
-    value: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.number]),
-    label: _react2.default.PropTypes.node
+  placeholder: _propTypes2.default.string,
+  maxHeight: _propTypes2.default.string,
+  onChange: _propTypes2.default.func,
+  onRenderValue: _propTypes2.default.func,
+  options: _propTypes2.default.arrayOf(_react2.default.PropTypes.shape({
+    value: _propTypes2.default.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.number]),
+    label: _propTypes2.default.node
   })),
-  value: _react2.default.PropTypes.node,
-  isSearchable: _react2.default.PropTypes.bool,
-  isOpen: _react2.default.PropTypes.bool,
-  onSearch: _react2.default.PropTypes.func,
-  onToggleOpen: _react2.default.PropTypes.func // used when the parent needs to know that isOpen was toggled
+  value: _propTypes2.default.node,
+  isSearchable: _propTypes2.default.bool,
+  isOpen: _propTypes2.default.bool,
+  onSearch: _propTypes2.default.func,
+  onToggleOpen: _propTypes2.default.func // used when the parent needs to know that isOpen was toggled
 };
 Select.defaultProps = {
   placeholder: '',

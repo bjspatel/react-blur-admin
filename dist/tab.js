@@ -9,6 +9,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Tab = exports.Tab = function Tab(_ref) {
@@ -23,7 +27,7 @@ var Tab = exports.Tab = function Tab(_ref) {
 };
 
 Tab.propTypes = {
-  title: _react2.default.PropTypes.string,
-  onClick: _react2.default.PropTypes.func,
-  name: _react2.default.PropTypes.string
+  title: _propTypes2.default.string,
+  onClick: _propTypes2.default.func,
+  name: _propTypes2.default.string
 };

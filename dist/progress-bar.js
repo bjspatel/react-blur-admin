@@ -11,6 +11,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -65,11 +69,11 @@ var ProgressBar = exports.ProgressBar = function (_React$Component) {
 }(_react2.default.Component);
 
 ProgressBar.propTypes = {
-  type: _react2.default.PropTypes.oneOf(['success', 'primary', 'warning', 'danger']),
-  striped: _react2.default.PropTypes.bool,
-  animated: _react2.default.PropTypes.bool,
-  label: _react2.default.PropTypes.string,
-  percentage: _react2.default.PropTypes.number.isRequired
+  type: _propTypes2.default.oneOf(['success', 'primary', 'warning', 'danger']),
+  striped: _propTypes2.default.bool,
+  animated: _propTypes2.default.bool,
+  label: _propTypes2.default.string,
+  percentage: _propTypes2.default.number.isRequired
 };
 ProgressBar.defaultProps = {
   striped: false,
