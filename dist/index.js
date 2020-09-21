@@ -12,11 +12,14 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
+var _createReactClass = require('create-react-class');
+
+var _createReactClass2 = _interopRequireDefault(_createReactClass);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _react2.default.PropTypes = _propTypes2.default;
-
-var _alert = require('./alert');
+_react2.default.createReactClass = _createReactClass2.default;
 
 Object.keys(_alert).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;

@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import createReactClass from 'create-react-class';
 
 React.PropTypes = PropTypes;
+React.createReactClass = createReactClass;
 
 export * from './alert';
 export * from './breadcrumbs';
